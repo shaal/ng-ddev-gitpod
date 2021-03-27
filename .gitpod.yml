@@ -26,13 +26,14 @@ tasks:
   - name: ddev_run
     openIn: left
     command: |
-      brew upgrade ddev
-      mkcert -install
+      # brew upgrade ddev
+      # mkcert -install
+      sleep 10
       # Wait for docker to come up before doing gitpod setup (gitpod-setup requires docker)
-      while ! docker ps 2>/dev/null; do
-        sleep 1
-      done
-      .ddev/gitpod-setup-ddev.sh
+      # while ! docker ps 2>/dev/null; do
+      #   sleep 1
+      # done
+      # .ddev/gitpod-setup-ddev.sh
 
 
 # Set the following ports public
