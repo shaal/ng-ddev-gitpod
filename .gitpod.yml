@@ -10,10 +10,11 @@ tasks:
   - init: |
       brew upgrade ddev
       mkcert -install
+      sleep 10
       # Wait for docker to come up before doing gitpod setup (gitpod-setup requires docker)
-      while ! docker ps 2>/dev/null; do
-        sleep 1
-      done
+      # while ! docker ps 2>/dev/null; do
+      #   sleep 1
+      # done
       .ddev/gitpod-setup-ddev.sh
 
   # Running composer install, docker-up, and start ddev
