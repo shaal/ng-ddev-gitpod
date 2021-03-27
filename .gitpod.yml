@@ -20,9 +20,9 @@ tasks:
   # Running composer install, docker-up, and start ddev
   - name: composer
     command: composer install
-  - name: docker-up
-    openMode: split-right
-    command: sudo docker-up
+  # - name: docker-up
+  #   openMode: split-right
+  #   command: sudo docker-up
   - name: ddev_run
     openIn: left
     command: |
