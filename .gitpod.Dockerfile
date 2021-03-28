@@ -21,7 +21,7 @@ RUN mkcert -install
 
       # Wait for docker to come up before doing gitpod setup (gitpod-setup requires docker)
 RUN |
-    while ! docker ps 2>/dev/null; do |
+    while ! docker ps 2>/dev/null; do
       sleep 1
     done
     .ddev/gitpod-setup-ddev.sh
