@@ -5,7 +5,7 @@ image:
 # when workspace gets loaded all docker images are ready
 tasks:
   - prebuild: composer install
-  - prebuild: sudo docker-up &
+  - prebuild: sudo docker-up
   # Wait for docker to come up before running ddev
   - prebuild: |
       brew upgrade ddev
